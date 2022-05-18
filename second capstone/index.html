@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <title>lev</title>
+</head>
+<body>
+    <header>
+      <div class="logo">
+        LeV
+      </div>
+      <nav>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">FEATURES</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">FEATURES</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="container-fluid">
+        <section class="row justify-content-center">
+            <section class="col-12 col-sm-6 col-md-3">
+                <form class="form-container">
+                    <div class="mb-3 trivia">
+                      <div class="text-danger hide">Username is too short or contains special characters</div>
+                      <input type="text" placeholder="Enter your username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="mb-3 trivia">
+                      <input type="email" placeholder="Enter your email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                      <div id="emailHelp" class="form-text" style="color: black;">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3 trivia">
+                       <input type="number" placeholder="Enter your phone number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                       <div id="emailHelp" class="form-text" style="color: black;">We'll never share your phone number with anyone else.</div>
+                    </div>
+                    <div class="mb-3 trivia">
+                      <div class="text-danger hide">The password has to consist of one upper case letter, one number and one special character.</div>
+                      <input type="password" placeholder="Enter your password" class="form-control" id="exampleInputPassword1" required>
+                    </div>
+                    <div class="mb-3 trivia">
+                      <input type="password" placeholder="Please confirm your password" class="form-control" id="exampleInputPassword1" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="radio" name="gender" class="form-check-input" id="exampleCheck1" required>
+                      <label class="form-check-label" for="exampleCheck1">Male</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="radio" name="gender" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Female</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit">Submit</button>
+                  </form>
+            </section>
+        </section>
+    </section>
+    <script src="java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
